@@ -1,0 +1,123 @@
+html {
+  background-color: #f5ede0;
+}
+/*--------------------------------------------------------------
+# Navbar Section
+--------------------------------------------------------------*/
+.navbar-brand .navbar-item img {
+  max-height: unset;
+}
+.navbar {
+  background-color: #D9BB84;
+}
+
+
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+.hero {
+  width: 100%;
+  background-size: cover;
+  position: relative;
+  min-height: 60vh;
+  padding: 50px 0 60px 0;
+}
+
+.hero h2 {
+  font-size: 64px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #400D01;
+}
+
+.hero p {
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 640px) {
+  .hero h2 {
+    font-size: 36px;
+  }
+}
+
+
+/*--------------------------------------------------------------
+# Details
+--------------------------------------------------------------*/
+.details {
+  padding: 30px 0;
+}
+.details .content+.content {
+  margin-top: 100px;
+}
+
+.details .content h3 {
+  font-weight: 600;
+  font-size: 26px;
+  color: #400D01;
+}
+
+.details .content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.details .content ul li {
+  padding-bottom: 10px;
+}
+
+.details .content ul i {
+  font-size: 20px;
+  padding-right: 4px;
+}
+
+.details .content p:last-child {
+  margin-bottom: 0;
+}
+
+.container {
+  overflow: hidden;
+}
+
+
+/*--------------------------------------------------------------
+# cafeterías
+--------------------------------------------------------------*/
+.hover-wrapper {
+  overflow: hidden;
+}
+.hover-wrapper img {
+  transition: 0.3s ease;
+  transform: scale(1.1);
+}
+.hover-wrapper:hover img {
+  transform: scale(1);
+}
+.hover-wrapper:hover .hover-overlay {
+  opacity: 1;
+  visibility: visible;
+}
+
+.hover-overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: inherit;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s ease;
+}
+
+.hover-content {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
